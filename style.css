@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    height: 80px;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 5px solid #FF69B4; 
+    border-radius: 8px;
+}
+
+#logo {
+    margin: 20px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+header li {
+    display: inline-block;
+}
+
+header a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #FF69B4;
+}
+section{
+    min-height: 70vh;
+}
+.home,.about{
+    min-height: 70vh;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px;
+}
+.about{
+    min-height: 70vh;
+}
+.home div,.about div {
+    flex: 1;
+}
+#my-info,#social-media{
+    margin: 20px;
+}
+#my-info span {
+    font-size: 2.5rem;
+}
+#my-info h2 {
+    font-size: 3rem;
+    color: #FF69B4;
+    text-decoration: underline;
+}
+#my-info p{
+    margin: 2% 2% 2% 0;
+    text-align: justify;
+}
+#image1,
+#image2,#image3 {
+    padding: 20px;
+}
+#image1 img,
+#image2 img, #image3 img{
+    width: 100%;
+    max-height: 350px; 
+    object-fit: contain;
+    display: block; /* removes tiny gaps under images */
+    border-radius: 8px;
+    border: 2px solid #FF69B4;
+    box-shadow:  0 0 10px rgba(255, 105, 180, 0.5)
+
+}
+
+.about #info p{
+    margin: 2%;
+    text-align: justify;
+}
+.skill,.projects{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.skill>h1,.projects>h1,.contact>h1,.about #info h1{
+    font-size: 3rem;
+    color: #FF69B4;
+    text-decoration: underline;
+    margin-left: 5%;
+    margin-bottom: 5%; 
+    margin-top: 5%;
+    flex: 0 0 auto;
+
+}
+.skill .block,.projects .block{
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.block div{
+    flex:1;
+    max-width: 450px;
+    border-radius: 8px;
+    border: 2px solid #FF69B4;
+    box-shadow:  5px 5px 10px rgba(255, 105, 180, 0.5);
+
+}
+.projects .block div{
+    max-width: 300px;
+}
+.skill .block h1{
+    font-size: 2rem;
+    color: #FF69B4;
+    text-decoration: underline;
+    margin: 5%;
+
+}
+.skill .block ul{
+    margin: 4%;
+    list-style-position: inside;
+
+}
+.projects img{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+.projects .block h1{
+    margin: 5%;
+    height: 10%;
+    font-weight: bold;
+    color: #FF69B4;
+    text-decoration: underline;
+}
+.projects p{
+    height: auto;
+    margin: 5% 0 5% 5%;
+    text-align: left;
+
+}
+/* .contact{
+    height: 70vh;
+    width: 100%;
+} */
+.contact>p{
+    font-size: 2rem;
+    margin:0 0 0 5%;
+}
+#block3{
+    height: 80vh;
+    width: 100%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;           /* makes all children same height */
+    gap:20px;
+}
+#block3 > form,
+#block3 > #contactme{
+    flex:1;
+    
+}
+fieldset{
+    border-radius: 8px;
+    border: 2px solid #FF69B4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20% 20% 35% ;
+    min-width: 450px;
+    box-shadow:  5px 5px 10px rgba(255, 105, 180, 0.5);
+    background-color: rgb(17, 16, 16) ;
+    
+}
+label{
+    margin-top: 5%;
+    color: #FF69B4;
+    font-size: 1.5rem;
+}
+input{
+    height: 2.5rem;
+    min-width:200px;
+    border-radius: 8px;
+    border: 2px solid #FF69B4;
+    margin-top: 2%;
+    background-color:  rgb(17, 16, 16);
+    box-shadow:  0 0  10px rgba(255, 105, 180, 0.5)
+}
+textarea{
+    height: 5rem;
+    min-width:200px;
+    border-radius: 8px;
+    border: 2px solid #FF69B4;
+    margin-top: 2%;
+    background-color: rgb(17, 16, 16);
+
+}
+button{
+    color:black;
+    font-size: 1rem;
+    height: 3rem;
+    border-radius: 8px;
+    border: 2px solid #FF69B4;
+    margin-top: 2%;
+    background-color:  #FF69B4;
+    margin-bottom: 6%;
+    box-shadow:  0 0 10px rgba(255, 105, 180, 0.5);
+
+}
+legend{
+    color: #FF69B4;
+    font-size: 2rem;
+
+}
+
+#contactme {
+    min-height: 70vh;
+    max-width: 100%;
+    margin: 0 15% 15% 15% ;
+    text-align: center;
+    padding: 20px;
+    
+}
+#contactme p{
+    color: #FF69B4;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#contactme a{
+    text-decoration: none;
+    color: #FF69B4;
+    font-size: 1rem;
+}
+.contact-info button{
+    box-shadow:  0 0 10px rgba(255, 105, 180, 0.5);
+    display: inline-block;
+    margin-top: 10%;
+    min-width: 500px;
+    background-color: rgb(23, 22, 22);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small phones */
+@media (max-width: 480px) {
+   /* e.g., stack elements vertically */
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+   /* e.g., reduce padding, adjust font sizes */
+}
+ 
+/* Small laptops */
+@media (max-width: 1024px) {
+   /* e.g., adjust layout columns */
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- You add <span> so you can style part of your logo separately from the clickable link container. -->
+    
+    <header>
+        <h1 id="logo"><span>SHANTUL RANI</span></h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Info</a></li>
+        </ul>
+    </header>
+    <section class="home" id="home">    
+        <div>
+            <div id="my-info">
+                <h1>Welcome To My World!</h1>
+                <h1><span>Hi!</span> I'm Shantul.</h1>
+                <h2>Data Science Student!</h2>
+                <p>I’m a passionate data science enthusiast exploring the world of web development to broaden my technical skill set. With a curiosity for data-driven insights and a growing proficiency in building websites, I’m committed to combining analytics and creative problem-solving to create impactful digital solutions.</p>
+            </div>
+            <div id="social-media">
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+
+            </div>
+        </div>
+        <div id="image1">
+            <img src="images\images.jpg" alt="Me">
+        </div>
+    </section>
+
+    <section class="about" id="about" >
+        <div id="image2">
+            <img src="images\images.jpg" alt="Me">
+        </div>
+        <div id="info">
+            <h1>About Me</h1>
+            <p>I am a dedicated and curious learner with a strong passion for data science, currently expanding my expertise into the field of web development. My journey began with an interest in extracting meaningful insights from data, but I quickly realized the power of combining analytical skills with the ability to design and build engaging, user-friendly websites.</p>
+            <p>I’m a data science enthusiast with a growing passion for web development. I love turning data into actionable insights and building clean, user-friendly websites. My aim is to combine analytics and design to create impactful, innovative digital solutions while continuously expanding my skills.</p>
+        </div>
+    </section>
+
+    <section class="skill" id="skill">
+        <h1>Skills</h1>
+        <div class="block">
+            <div id="datascience">
+                <h1>Data Science & Analytics</h1>
+                <ul>
+                    <li>Python,R</li>
+                    <li>Data Cleaning & Preprocessing</li>
+                    <li>Data Visualization</li>
+                    <li>Basic Machine Learning Models</li>
+                    <li>Exploratory Data Analysis (EDA)</li>
+                </ul>
+            </div>
+            <div id="Web-Development"> 
+                <h1>Web Development</h1>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>Responsive Web Design</li>
+                    <li>Basic JavaScript </li>
+                    <li>Git & GitHub for version control</li>
+                </ul>
+            </div>
+            <div id="soft-skills">
+                <h1>Soft skills</h1>
+                <ul>
+                    <li>Problem-Solving</li>
+                    <li>Analytical Thinking</li>
+                    <li>Attention to Detail</li>
+                    <li>Creativity in Design</li>
+                    <li>Communication Skills</li>
+                    <li>Continuous Learning</li>
+                </ul>    
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="block">
+            <div id="first">
+                <img src="images\download (3).jpg" alt="">
+                <h1>Student Management System</h1>
+                <p>Built Python student management system with record tracking, fee calculation, and admin controls using tabulate for data visualization</p>
+            </div>
+            <div id="second">
+                <img src="images\download (1).jpg" alt="">
+                <h1>Crime Management System</h1>
+                <p>Built C++ crime management system using OOP and STL, featuring criminal profiling, network analysis, and case prioritization modules</p>
+            </div>
+            <div id="third">
+                <img src="images\download (2).jpg" alt="">
+                <h1>Monster Maze</h1>
+                <p>Created a Java game project with basic graphics, moving characters, and simple level and item systems using OOP concepts</p>
+            </div>
+            <div id="forth">
+                <img src="images\images (1).jpg" alt="">
+                <h1>Hotel Management System</h1>
+                <p>Designed and implemented a Java-based Hotel Management System featuring modular components for guest, room, staff, inventory, food ordering, and billing, with file handling, input validation, and ANSI-colored console UI.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <div id="block3">
+             <form action="#" method="#">
+                <fieldset>
+                    <legend>Lets Talk</legend> 
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" placeholder="Your Name" required>
+                    <br>
+                    <label for="email">Email</label>
+                    <input id="email"type="email" name="_replyto" placeholder="Your Email" required>
+                    <br>
+                    <label for="message">Your Message</label>
+                    <textarea id="message"name="message" placeholder="Your Message" required></textarea>
+                    <br>
+                    <button type="submit">Send Message</button>
+                </fieldset>
+            </form>
+        
+            <div id="contactme">
+                <p>Have a project in mind? Let's talk!</p>
+                <div class="contact-info">
+                    <button><a href="mailto:you@example.com">@ShantulRaniv7</a></button>
+                    <br>
+                    <button><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></button>
+                    <br>
+                    <button><a href="https://github.com/yourprofile" target="_blank">GitHub</a></button>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    
+</body>
+</html>
