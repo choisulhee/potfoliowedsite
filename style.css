@@ -273,31 +273,116 @@ legend{
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Small phones */
 @media (max-width: 480px) {
-   /* e.g., stack elements vertically */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .home, .about {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #my-info span {
+        font-size: 1.8rem;
+    }
+
+    #my-info h2 {
+        font-size: 2rem;
+    }
+
+    #image1 img, #image2 img, #image3 img {
+        max-height: 200px;
+    }
+
+    .skill .block, .projects .block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    fieldset {
+        margin: 0 5%;
+        min-width: auto;
+        padding: 10px;
+    }
+
+    .contact-info button {
+        min-width: 100%;
+    }
 }
 
 /* Tablets */
 @media (max-width: 768px) {
-   /* e.g., reduce padding, adjust font sizes */
+    header ul {
+        gap: 15px;
+    }
+
+    .home, .about {
+        gap: 30px;
+    }
+
+    .skill .block, .projects .block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .projects .block div {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    fieldset {
+        margin: 0 10%;
+        min-width: auto;
+    }
+
+    #block3 {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
- 
+
 /* Small laptops */
 @media (max-width: 1024px) {
-   /* e.g., adjust layout columns */
+    header {
+        padding: 10px 20px;
+    }
+
+    .skill .block, .projects .block {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .projects .block div {
+        max-width: 45%;
+    }
+
+    fieldset {
+        margin: 0 15%;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
